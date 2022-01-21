@@ -10,7 +10,12 @@ import matplotlib.animation as animation
 from numpy.lib.function_base import average
 from matplotlib.backend_bases import MouseButton
 
-#-CONTROLLING VARIABLES FOR CHANGING-----------------------------------------------------------------------------------------------
+#-INFO-----------------------------------------------------------------------------------------------------------------------------
+
+# Install the necessary packages and then run this code. 
+# The window that pops up is interactable so you can click somewhere to drop the pendulum from there.
+
+#-CONTROLLING VARIABLES -----------------------------------------------------------------------------------------------------------
 
 fps = 60 # choose a stable framerate for 1:1 time in simulation
 stepsPerFrame = 32 # increase for improved accuracy but lesser performance
@@ -23,10 +28,10 @@ m_2 = 0.8 # mass of pendulum 2 (kg)
 l_2 = 0.5 # length of pendulum 2 (m)
 
 g = 9.81 # gravity (m/s)
-frictionCoefficient = 0.0 # (dimensionless)
+frictionCoefficient = 0.1 # (dimensionless)
 
-theta_1_0 = np.pi / 6 # starting angle for pendulum 1
-theta_2_0 = np.pi / 6 # starting angle for pendulum 2
+theta_1_0 = 2 # starting angle for pendulum 1
+theta_2_0 = 2 # starting angle for pendulum 2
 thetaDot_1_0 = 0 # starting angular velocity for pendulum 1
 thetaDot_2_0 = 0 # starting angular velocity for pendulum 2
 
